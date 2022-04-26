@@ -12,6 +12,7 @@ foreach (var i in Enumerable.Range(0, numberOfStudents)) {
     var course = Extensions.ForceReadLine("Course", 1);
     var section = Extensions.ForceReadLine("Section", 1);
     students[i] = new Student(firstName, lastName, year, course, section);
+    Console.WriteLine($"Successfully Registered {firstName} {lastName}.");
     Console.WriteLine();
 }
 
